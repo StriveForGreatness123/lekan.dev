@@ -59,7 +59,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);overflow-x:h
 /* ══ NAV ══ */
 nav{
   position:fixed;top:0;width:100%;z-index:999;
-  padding:0 2.5rem;height:64px;
+  padding:0 5rem;height:64px;
   display:flex;align-items:center;justify-content:space-between;
   background:rgba(6,10,20,0.8);backdrop-filter:blur(24px) saturate(1.3);
   border-bottom:1px solid transparent;transition:all 0.4s;
@@ -88,7 +88,7 @@ nav.scrolled{border-bottom-color:var(--border);box-shadow:0 4px 40px rgba(0,0,0,
 /* ══ HERO ══ */
 .hero{
   min-height:100vh;display:flex;align-items:center;
-  padding:7rem 2.5rem 5rem;position:relative;overflow:hidden;
+  padding:7rem 5rem 5rem;position:relative;overflow:hidden;
 }
 .hero-orb1,.hero-orb2,.hero-orb3{
   position:absolute;border-radius:50%;pointer-events:none;filter:blur(90px);
@@ -101,10 +101,10 @@ nav.scrolled{border-bottom-color:var(--border);box-shadow:0 4px 40px rgba(0,0,0,
 
 .hero-inner{
   display:grid;grid-template-columns:1fr auto;gap:5rem;
-  align-items:center;max-width:1100px;margin:0 auto;width:100%;
+  align-items:center;max-width:1400px;margin:0 auto;width:100%;
   position:relative;z-index:1;
 }
-.hero-text{max-width:640px}
+.hero-text{max-width:750px}
 .hero-trademark{
   font-family:var(--serif);font-size:0.88rem;font-style:italic;
   color:var(--secondary);letter-spacing:0.05em;margin-bottom:1.2rem;
@@ -130,7 +130,7 @@ nav.scrolled{border-bottom-color:var(--border);box-shadow:0 4px 40px rgba(0,0,0,
 }
 @keyframes gradientShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
 .hero-bio{
-  font-size:1.05rem;color:var(--text-dim);line-height:1.75;max-width:520px;margin-bottom:2.5rem;
+  font-size:1.05rem;color:var(--text-dim);line-height:1.75;max-width:620px;margin-bottom:2.5rem;
   opacity:0;animation:fadeUp 0.7s ease 0.5s forwards;min-height:52px;
 }
 .hero-ctas{display:flex;gap:0.85rem;flex-wrap:wrap;opacity:0;animation:fadeUp 0.7s ease 0.65s forwards}
@@ -147,7 +147,7 @@ nav.scrolled{border-bottom-color:var(--border);box-shadow:0 4px 40px rgba(0,0,0,
 
 .hero-photo-wrap{opacity:0;animation:fadeUp 0.7s ease 0.6s forwards;position:relative}
 .hero-photo{
-  width:240px;height:240px;border-radius:24px;overflow:hidden;
+  width:280px;height:280px;border-radius:24px;overflow:hidden;
   border:2.5px solid var(--border);position:relative;
   box-shadow:0 30px 80px rgba(0,0,0,0.6),0 0 60px rgba(230,57,70,0.05);
   transition:all 0.5s cubic-bezier(.4,0,.2,1);image-rendering:auto;
@@ -166,14 +166,14 @@ nav.scrolled{border-bottom-color:var(--border);box-shadow:0 4px 40px rgba(0,0,0,
 .stat-label{font-size:0.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.12em;margin-top:0.15rem}
 
 /* ══ SECTIONS ══ */
-section{padding:7rem 2.5rem;max-width:1000px;margin:0 auto;position:relative;z-index:1}
+section{padding:7rem 5rem;max-width:1400px;margin:0 auto;position:relative;z-index:1}
 .sec-label{font-family:var(--mono);font-size:0.62rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--primary);margin-bottom:0.5rem}
 .sec-title{font-size:2.2rem;font-weight:800;letter-spacing:-0.025em;margin-bottom:2.5rem}
-.divider{height:1px;max-width:1000px;margin:0 auto;background:linear-gradient(90deg,transparent,var(--border),transparent);position:relative;z-index:1}
+.divider{height:1px;max-width:1400px;margin:0 auto;background:linear-gradient(90deg,transparent,var(--border),transparent);position:relative;z-index:1}
 
 /* ══ PHILOSOPHY ══ */
-.philosophy{padding:5rem 2rem;position:relative;z-index:1;background:linear-gradient(180deg,transparent,rgba(230,57,70,0.02),rgba(244,208,63,0.02),transparent)}
-.philosophy-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.philosophy{padding:5rem 5rem;position:relative;z-index:1;background:linear-gradient(180deg,transparent,rgba(230,57,70,0.02),rgba(244,208,63,0.02),transparent)}
+.philosophy-inner{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
 .philosophy-text{display:grid;gap:1.5rem}
 .phil-quote{font-family:var(--serif);font-size:1.1rem;font-style:italic;color:var(--text-dim);line-height:1.7;padding-left:1rem;border-left:2px solid var(--primary)}
 .phil-quote .attr{font-family:var(--mono);font-size:0.65rem;color:var(--primary);font-style:normal;display:block;margin-top:0.5rem;letter-spacing:0.08em}
@@ -264,20 +264,20 @@ section{padding:7rem 2.5rem;max-width:1000px;margin:0 auto;position:relative;z-i
 .hobby-sub{font-size:0.6rem;color:var(--muted);margin-top:0.15rem;position:relative;z-index:1}
 
 /* ══ FREEDOM BANNER ══ */
-.freedom-banner{text-align:center;padding:5rem 2rem;position:relative;z-index:1;background:linear-gradient(180deg,transparent,rgba(230,57,70,0.03),rgba(244,208,63,0.02),transparent)}
+.freedom-banner{text-align:center;padding:5rem 5rem;position:relative;z-index:1;background:linear-gradient(180deg,transparent,rgba(230,57,70,0.03),rgba(244,208,63,0.02),transparent)}
 .freedom-big{font-family:var(--serif);font-size:clamp(2rem,5vw,3.5rem);font-weight:900;font-style:italic;background:linear-gradient(135deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:1rem;line-height:1.2}
-.freedom-sub{font-size:0.9rem;color:var(--text-dim);max-width:520px;margin:0 auto;line-height:1.8}
+.freedom-sub{font-size:0.9rem;color:var(--text-dim);max-width:620px;margin:0 auto;line-height:1.8}
 
 /* ══ CONTACT ══ */
-.contact-section{text-align:center;padding:8rem 2rem;position:relative;z-index:1}
+.contact-section{text-align:center;padding:8rem 5rem;position:relative;z-index:1}
 .contact-section .sec-title{font-size:2.8rem;margin-bottom:0.75rem}
-.contact-sub{color:var(--text-dim);font-size:0.95rem;margin-bottom:3rem;max-width:430px;margin-left:auto;margin-right:auto}
+.contact-sub{color:var(--text-dim);font-size:0.95rem;margin-bottom:3rem;max-width:520px;margin-left:auto;margin-right:auto}
 .contact-row{display:flex;justify-content:center;gap:0.85rem;flex-wrap:wrap}
 .contact-pill{display:flex;align-items:center;gap:0.55rem;padding:0.8rem 1.6rem;background:var(--surface);border:1px solid var(--border);border-radius:50px;color:var(--text);text-decoration:none;font-size:0.82rem;font-weight:500;transition:all 0.35s}
 .contact-pill:hover{border-color:var(--primary);transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,0.3)}
 .contact-pill svg{width:16px;height:16px;color:var(--primary);flex-shrink:0}
 
-footer{text-align:center;padding:2.5rem 2rem;font-size:0.68rem;color:var(--muted);border-top:1px solid var(--border);font-family:var(--mono);position:relative;z-index:1}
+footer{text-align:center;padding:2.5rem 5rem;font-size:0.68rem;color:var(--muted);border-top:1px solid var(--border);font-family:var(--mono);position:relative;z-index:1}
 footer .hl{color:var(--primary)}
 .footer-quote{font-family:var(--serif);font-style:italic;color:var(--text-dim);font-size:0.78rem;margin-bottom:0.5rem}
 
@@ -296,6 +296,7 @@ footer .hl{color:var(--primary)}
   .nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:rgba(6,10,20,0.95);backdrop-filter:blur(20px);padding:1.5rem 2rem;border-bottom:1px solid var(--border);gap:1.2rem}
   .nav-links.open{display:flex}.hamburger{display:block}
   section{padding:4.5rem 1.5rem}
+  .philosophy,.freedom-banner,.contact-section{padding-left:1.5rem;padding-right:1.5rem}
   .hobbies-grid{grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:0.7rem}
   .arc-label{display:none}
 }
@@ -533,7 +534,7 @@ footer .hl{color:var(--primary)}
     <p class="contact-sub">Whether you want to talk code, collaborate on something, or just talk One Piece, I'm all ears.</p>
   </div>
   <div class="contact-row reveal">
-    <a href="mailto:olamilekan.sulaiman@gmail.com" class="contact-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Email Me</a>
+    <a href="/cdn-cgi/l/email-protection#7d12111c10141118161c13530e08111c14101c133d1a101c1411531e1210" class="contact-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Email Me</a>
     <a href="https://www.linkedin.com/in/olamilekan-sulaiman-5a4706236/" class="contact-pill" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
     <a href="tel:240-795-7438" class="contact-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.88.36 1.75.7 2.58a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.83.34 1.7.57 2.58.7A2 2 0 0122 16.92z"/></svg>Call</a>
   </div>
@@ -544,7 +545,7 @@ footer .hl{color:var(--primary)}
   <span class="hl">&#9781;</span> Built by Olamilekan Sulaiman <span class="hl">|</span> 2026
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 (function() {
   // ══════════════════════════════════════
   //   ARC THEME CYCLING BACKGROUNDS
@@ -687,10 +688,4 @@ footer .hl{color:var(--primary)}
 
   // ══ 3D TILT ══
   document.querySelectorAll('.tilt-card').forEach(function(c){
-    c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top,cx2=r.width/2,cy2=r.height/2;c.style.transform='perspective(600px) rotateX('+((y-cy2)/cy2)*-7+'deg) rotateY('+((x-cx2)/cx2)*7+'deg) translateY(-5px) scale(1.02)';});
-    c.addEventListener('mouseleave',function(){c.style.transform='';});
-  });
-})();
-</script>
-</body>
-</html>
+    c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top,cx2=r.width/2,cy2=r.height/2;c.style.transform='perspective(600px) rotateX('+((y-cy2)/cy2)*-7+'deg) rotateY('+((x-c
